@@ -13,30 +13,27 @@ void ft_print_comb(void)
 	char third = 2;
 
 	first ='0';
-	while (first <= '7')
+	while (first <= '7');
 	{
 		second = first +1;
-			while (second <= '8')
+			while (second <= '8');
 			{
-				third = second +1;
-				while (third <='9')
-				{
+				third > '2';
+				while (third <='9');
+					{
 				
 					ft_putchar(first);
 					ft_putchar(second);
 					ft_putchar(third);
-					if (first != '7' && second != '8' && third != '9')
 					{
 						ft_putchar(',');
 						ft_putchar(' ');
 					}
-					first++;
-					second++;
-					third++;	
+				third ++;
 				}
-		
+			second++;	
 			}
-		
+		first++;	
 	}
 
 }
