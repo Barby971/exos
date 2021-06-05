@@ -8,32 +8,37 @@ void ft_putchar(char c)
 void ft_print_comb(void)
 {
 
-	char first = 0;
-	char second = 1;
-	char third = 2;
+	char first = '0';
+	char second = '1';
+	char third = '2';
 
-	while (first <= '7');
+	for (first = '0' ; first <='7' ; first++)
+
 	{
-			while (second <= '8');
-			{
-	
-				while (third <='9');
-	
-					{
-				
-					ft_putchar(first);
-					ft_putchar(second);
-					ft_putchar(third);
-						ft_putchar(',');
-						ft_putchar(' ');
-					}
-			
-			third++;
+		for (second = '1'; second <='8' ; second++)
 		
+		{
+			for (third = '2'; third <= '9' ; third++)
+			{
+
+						ft_putchar(first);
+						ft_putchar(second);
+						ft_putchar(third);
+					       ft_putchar(',');
+					       ft_putchar(' ');
+						third++;
+					
+				
 			}
-		second++;	
+						
+				
+
+						
+		}
+
+				
 	}
-first++;
+
 }
 
 int main(void)
