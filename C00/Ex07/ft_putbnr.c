@@ -8,8 +8,6 @@ void ft_putchar (char c)
 
 void ft_putnbr(int nb)
 {
-	nb = '0';
-
 	if(nb < 0)
 	{
 		ft_putchar('-');
@@ -18,17 +16,19 @@ void ft_putnbr(int nb)
 
 	if (nb >= 10)
 	{
+	
 		ft_putnbr(nb/10);
 	}
-	
-	else
 
-	ft_putchar((nb%10)+'0');
+	else
+		ft_putchar((nb/10)+'0');
+		ft_putchar((nb%10)+'0');
+	
 
 	
 }
 
 int main()
-{ ft_putnbr(42);
+{ ft_putnbr(-8884242);
 	return 0;
 }
